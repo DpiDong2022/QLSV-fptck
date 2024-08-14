@@ -1,0 +1,9 @@
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\bin\Debug\netstandard2.1\QLSV.domain.deps.json
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\bin\Debug\netstandard2.1\QLSV.domain.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\bin\Debug\netstandard2.1\QLSV.domain.pdb
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.AssemblyInfoInputs.cache
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.AssemblyInfo.cs
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.csproj.CoreCompileInputs.cache
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.pdb

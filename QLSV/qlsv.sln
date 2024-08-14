@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C61388D0-768B-4253-AB7F-061E5E0B0F34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{35F0D077-71C8-4E42-A703-149729CDE471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV.domain", "src\core\QLSV.domain\QLSV.domain.csproj", "{934945DD-BC7B-49B9-BEEB-249514763943}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{661815AF-17E1-4BC6-9624-E4D906E10AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV.data", "src\infrastructure\QLSV.data\QLSV.data.csproj", "{96F556ED-9FAA-4FB1-950E-93B2B971C155}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hosting", "hosting", "{BE7D6186-053E-4362-8631-561348040AE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV.mvc", "src\hosting\QLSV.mvc\QLSV.mvc.csproj", "{D55CC10C-1C77-4032-A994-C8F4C829E1C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{934945DD-BC7B-49B9-BEEB-249514763943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934945DD-BC7B-49B9-BEEB-249514763943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934945DD-BC7B-49B9-BEEB-249514763943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934945DD-BC7B-49B9-BEEB-249514763943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F556ED-9FAA-4FB1-950E-93B2B971C155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F556ED-9FAA-4FB1-950E-93B2B971C155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F556ED-9FAA-4FB1-950E-93B2B971C155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F556ED-9FAA-4FB1-950E-93B2B971C155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55CC10C-1C77-4032-A994-C8F4C829E1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55CC10C-1C77-4032-A994-C8F4C829E1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55CC10C-1C77-4032-A994-C8F4C829E1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55CC10C-1C77-4032-A994-C8F4C829E1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35F0D077-71C8-4E42-A703-149729CDE471} = {C61388D0-768B-4253-AB7F-061E5E0B0F34}
+		{934945DD-BC7B-49B9-BEEB-249514763943} = {35F0D077-71C8-4E42-A703-149729CDE471}
+		{661815AF-17E1-4BC6-9624-E4D906E10AF5} = {C61388D0-768B-4253-AB7F-061E5E0B0F34}
+		{96F556ED-9FAA-4FB1-950E-93B2B971C155} = {661815AF-17E1-4BC6-9624-E4D906E10AF5}
+		{BE7D6186-053E-4362-8631-561348040AE5} = {C61388D0-768B-4253-AB7F-061E5E0B0F34}
+		{D55CC10C-1C77-4032-A994-C8F4C829E1C1} = {BE7D6186-053E-4362-8631-561348040AE5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,323 @@
+@{
+    ViewData["Title"] = "Trang quản lý sinh viên";
+}
+@* last updated: 14/08/2024 *@
+
+<!-- Modal -->
+<div class="modal" id="sinhvienModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sinhvienModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sinhvienModalLabel">Thêm mới thông tin sinh viên</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" id="sinhvien-form">
+            <input type="number" name="id" value="0" hidden>
+            <div class="row gx-3">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="hoten" class="form-label">Họ và tên</label>
+                    <input type="text" name="hoten" class="form-control form-control-lg" placeholder="Nhập họ và tên">
+                    <span class="text-danger" id="hoten"></span>
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="ngaysinh" class="form-label">Ngày sinh</label>
+                    <input format="dd/MM/yyyy" type="date" name="ngaysinh" class="form-control form-control-lg" placeholder="Chọn ngày sinh">
+                    <span class="text-danger" id="ngaysinh"></span>
+                </div>
+            </div>
+            <div class="row gx-3 pt-3">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="gioitinh" class="form-label">Giới tính</label>
+                    <select name="gioitinh" class="form-select form-select-lg" placeholder="Chọn giới tính" >
+                        <option selected value="-1">Chọn giới tính</option>
+                        <option value="1">Nam</option>
+                        <option value="0">Nữ</option>
+                    </select>
+                    <span class="text-danger" id="gioitinh"></span>
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="diachi" class="form-label">Địa chỉ</label>
+                    <input type="text" name="diachi" class="form-control form-control-lg" placeholder="Nhập địa chỉ">
+                    <span class="text-danger" id="diachi"></span>
+                </div>
+            </div>
+            <div class="row gx-3 pt-3">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control form-control-lg" placeholder="Nhập địa chỉ email">
+                    <span class="text-danger" id="email"></span>
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="sdt" class="form-label">Số điện thoại</label>
+                    <input type="tel" name="sdt" class="form-control form-control-lg" placeholder="Nhập số điện thoại">
+                    <span class="text-danger" id="sdt"></span>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btn-close-action" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+        <button type="button" id="btn-save-action" class="btn btn-primary" >Lưu</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="width: 90%;">
+    <div class="card my-2 px-2">
+       <div class="card-body">
+        <div class="row justify-content-between">
+            <div class="col-12 p-0 m-0 col-md-5 col-sm-6">
+                <h4>Quản lý sinh viên</h4>  
+            </div>
+            <button
+                class="btn btn-primary float-right col-12 col-sm-6 col-md-3 col-lg-2"
+                data-bs-toggle="modal"
+                data-bs-target="#sinhvienModal">
+                Thêm mới
+            </button>
+        </div>
+       </div>
+    </div>
+    <div class="container">
+        <table id="sinhvien-table" class="table table-bordered table-hover table-responsive"></table>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        const BaseUrl = "http://localhost:5117"
+        let sinhVienList = []
+        let dt
+        let currentTableRow = {}
+
+        const formObject = (form) => {
+            return Object.fromEntries(new FormData(form))
+        }
+
+        const getFormObject = () => {
+            return formObject($("#sinhvien-form").get(0))
+        }
+
+        function formatDateVN(object){
+            const objectDate = new Date(object)
+            const nam = objectDate.getFullYear()
+            const ngay = objectDate.getDay()
+            const thang = objectDate.getMonth() + 1
+            return `${ngay>9 ? ngay:'0'+ngay}-${thang>9 ? thang:'0'+thang}-${nam}`
+        }
+
+        function InitDatatable(){
+            dt = $("#sinhvien-table").DataTable({
+                data: sinhVienList,
+                columns: [
+                    {
+                        data: null,
+                        title: 'STT',
+                        render: (data, type, row, meta) => {
+                            if(type === 'display'){
+                                return meta.row + 1
+                            }
+                            return data
+                        },
+                        defaultContent: '',
+                        className: 'text-center'
+                    },
+                    {data: 'hoten', title: 'Họ và tên'},
+                    {
+                        data: 'ngaysinh',
+                        title: 'Ngày sinh',
+                        render: (data, type, row, meta) => {
+                            if(type === 'display'){
+                                return data
+                            }
+                            return data
+                        },
+                    },
+                    {data: 'email', title: 'Email'},
+                    {data: 'sdt', title: 'Số điện thoại'},
+                    {
+                        data: 'gioitinh', 
+                        title: 'Giới tính',
+                        render: (data, type, row) => {
+                            if(type === 'display'){
+                                return data === 1 ? 'Nam':'Nữ'
+                            }
+                            return data 
+                        },
+                        className: 'text-start'   
+                    },
+                    {data: 'diachi', title: 'Địa chỉ'},
+                    {
+                        data: null, 
+                        title: 'Thao tác',
+                        width: '140px',
+                        orderable: false,
+                        defaultContent: '',
+                        render: (data, type, row) => {
+                            if(type === 'display'){
+                                return `<div class="row p-3 justify-content-between">
+                                           <button class="btn-edit-action col-12 col-sm-12 col-md-12 col-lg-5 btn btn-outline-info">Sửa</button>
+                                           <button class="btn-delete-action col-12 col-sm-12 col-md-12 col-lg-5 btn btn-outline-danger">Xóa</button>
+                                        </div>`
+                            }
+                        }
+                    }
+                ],
+                lengthMenu: [3, 10, 50],
+                pageLength: 3,
+                columnDefs: [
+                    {orderable: false, targets: [-1, 0, 1, 2, 3, 4, 6]}
+                ],
+                order: []
+            })
+        }
+
+        function Init(){
+            GetList()
+            $("#btn-save-action").on("click", () => {
+                console.log(JSON.stringify(getFormObject()))
+                Insert()
+            })
+
+            $("#sinhvienModal").on("hidden.bs.modal", () => {
+                $("#sinhvienModal form").get(0).reset()
+            })
+
+            $("#sinhvien-table").on("click", ".btn-delete-action", (e) => {
+                currentTableRow = e.target.closest('tr')
+                Delete()
+            })
+
+            $("#sinhvien-table").on("click", ".btn-edit-action", (e) => {
+                currentTableRow = e.target.closest('tr')
+                Edit()
+            })
+@* 
+            $("#sinhvien-form").find("input[type=date]").change((e) => {
+                alert(formatDateVN(e.target.value))
+                e.target.value = formatDateVN(e.target.value)
+            }) *@
+        }
+
+        function GetList(){
+            $.ajax({
+                type: "GET",
+                url: `${BaseUrl}/api/sinh-vien/list`,
+                success: (response) => {
+                    sinhVienList = response.data
+                    console.log(sinhVienList)
+                    InitDatatable()
+                },
+                error: (response) => {
+                    alert("error")
+                }
+            })
+        }
+
+        function InsertNewObjectIntoTable(object) {
+            dt.row.add(object).draw(false)
+            dt.page('last').draw(false)
+        }
+
+        function Delete() {
+            const id = dt.row(currentTableRow).data()['id']
+            Swal.fire({
+                title: 'Xác nhận',
+                text: 'Bạn muốn xóa thông tin của sinh viên này?',
+                icon: 'question',
+                showDenyButton: true,
+                denyButtonText: "Hủy",
+                confirmButtonText: "Xác nhận xóa",
+                confirmButtonColor: "#3085d6",
+            }).then((result) => {
+                if(result.isConfirmed){
+                    $("#loading").removeClass('d-none')
+                    $("#loading").addClass('d-block')
+                    $.ajax({
+                        method: "DELETE",
+                        url: `${BaseUrl}/api/sinh-vien`,
+                        contentType: "application/json",
+                        data: JSON.stringify(id),
+                        success: (response) => {
+                            $("#loading").addClass('d-none')
+                            $("#loading").removeClass('d-block')
+                            Swal.fire({
+                                title: "Thông báo",
+                                text: "Xóa thông tin sinh viên thành công",
+                                icon: "success"
+                            }).then(() => {
+                                dt.row(currentTableRow).remove().draw(false)
+                            })
+                        },
+                        error: (response) => {
+                            $("#loading").addClass('d-none')
+                            $("#loading").removeClass('d-block')
+                            Swal.fire({
+                                title: "Thông báo",
+                                text: "Xóa thông tin sinh viên không thành công",
+                                icon: "error"
+                            })
+                        }
+                    })
+                }
+            })
+        }
+
+        function Insert() {
+            $("#loading").removeClass('d-none')
+            $("#loading").addClass('d-block')
+            const object = getFormObject()
+            object.gioitinh = parseInt(object.gioitinh)
+
+            $.ajax({
+                type: "POST",
+                url: `${BaseUrl}/api/sinh-vien`,
+                data: JSON.stringify(object),
+                contentType: "application/json",
+                success: (response) => {
+                    $("#loading").addClass('d-none')
+                    $("#loading").removeClass('d-block')
+                    object.id = response.data
+                    $("#sinhvienModal").modal("hide")
+                    
+                    setTimeout(() => {
+                        InsertNewObjectIntoTable(object)
+                    }, 200)
+                },
+                error: (response) => {
+                    alert("error")
+                    $("#loading").addClass('d-none')
+                    $("#loading").removeClass('d-block')
+                }
+            })
+        }
+        
+        function Edit() {
+            BindObjectToForm()        
+        }
+
+        function BindObjectToForm() {
+            let obj = dt.row(currentTableRow).data()
+            for( const [key, value] of Object.entries(obj)) {
+                $("#sinhvien-form").find(`input[name='${key}'], select[name='${key}']`).prop("value", value)
+            }
+            $("#sinhvienModal").modal("show")
+
+            console.log(getFormObject())
+        }
+        $(document).ready(() => {
+            Init()
+        })
+
+        function GetDateFromVnDate(strValue) {
+            const UsDate = null 
+            const day = String(strValue).substr(0, 2)
+            const month = parseInt(String(strValue).substr(3, 2))+1
+            const year = String(strValue).substring(6)
+            UsDate = new Date(`${year}-${month}-${day}`)
+            return UsDate
+        }
+    </script>
+}

@@ -1,0 +1,15 @@
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\bin\Debug\net6.0\QLSV.data.deps.json
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\bin\Debug\net6.0\QLSV.data.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\bin\Debug\net6.0\QLSV.data.pdb
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\bin\Debug\net6.0\QLSV.domain.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\bin\Debug\net6.0\QLSV.domain.pdb
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.csproj.AssemblyReference.cache
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.AssemblyInfoInputs.cache
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.AssemblyInfo.cs
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.csproj.CoreCompileInputs.cache
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.csproj.Up2Date
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\refint\QLSV.data.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.pdb
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\ref\QLSV.data.dll
