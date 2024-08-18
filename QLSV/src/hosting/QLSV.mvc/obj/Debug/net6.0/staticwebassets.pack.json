@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\images\\6305585b-c407-4612-a59e-63ff7b33f9b1.jpg",
+      "PackagePath": "staticwebassets\\images\\6305585b-c407-4612-a59e-63ff7b33f9b1.jpg"
+    },
+    {
+      "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\images\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
       "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -195,6 +203,14 @@
     {
       "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\lib\\datatable\\datatables.css",
+      "PackagePath": "staticwebassets\\lib\\datatable\\datatables.css"
+    },
+    {
+      "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\lib\\datatable\\datatables.js",
+      "PackagePath": "staticwebassets\\lib\\datatable\\datatables.js"
     },
     {
       "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\lib\\datatable\\datatables.min.css",
@@ -503,6 +519,10 @@
     {
       "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\lib\\select2\\select2-3.5.4\\select2x2.png",
       "PackagePath": "staticwebassets\\lib\\select2\\select2-3.5.4\\select2x2.png"
+    },
+    {
+      "Id": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\wwwroot\\public\\i18n\\vi.json",
+      "PackagePath": "staticwebassets\\public\\i18n\\vi.json"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.QLSV.mvc.Microsoft.AspNetCore.StaticWebAssets.props",

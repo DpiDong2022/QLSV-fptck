@@ -3,6 +3,20 @@
 }
 @* last updated: 14/08/2024 *@
 
+@* display image modal *@
+<div class="modal" id="hinhAnhModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="hinhAnhModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img style="width: fit-content;" src="data:image/jpeg;base64,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" />
+        </div>
+    </div>
+  </div>
+</div>
+
 <!-- Modal -->
 <div class="modal" id="sinhvienModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sinhvienModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -18,12 +32,12 @@
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="hoten" class="form-label">Họ và tên</label>
                     <input type="text" name="hoten" class="form-control form-control-lg" placeholder="Nhập họ và tên">
-                    <span class="text-danger" id="hoten"></span>
+                    <span class="text-danger" class="error" id="hoten"></span>
                 </div>
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="ngaysinh" class="form-label">Ngày sinh</label>
-                    <input format="dd/MM/yyyy" type="date" name="ngaysinh" class="form-control form-control-lg" placeholder="Chọn ngày sinh">
-                    <span class="text-danger" id="ngaysinh"></span>
+                    <input id="ngaysinh-input" type="date" name="ngaysinh" class="form-control form-control-lg">
+                    <span class="text-danger" class="error" id="ngaysinh"></span>
                 </div>
             </div>
             <div class="row gx-3 pt-3">
@@ -34,24 +48,32 @@
                         <option value="1">Nam</option>
                         <option value="0">Nữ</option>
                     </select>
-                    <span class="text-danger" id="gioitinh"></span>
+                    <span class="text-danger" class="error" id="gioitinh"></span>
                 </div>
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="diachi" class="form-label">Địa chỉ</label>
                     <input type="text" name="diachi" class="form-control form-control-lg" placeholder="Nhập địa chỉ">
-                    <span class="text-danger" id="diachi"></span>
+                    <span class="text-danger" class="error" id="diachi"></span>
                 </div>
             </div>
             <div class="row gx-3 pt-3">
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" name="email" class="form-control form-control-lg" placeholder="Nhập địa chỉ email">
-                    <span class="text-danger" id="email"></span>
+                    <span class="text-danger" class="error" id="email"></span>
                 </div>
                 <div class="form-group col-md-6 col-sm-12">
                     <label for="sdt" class="form-label">Số điện thoại</label>
-                    <input type="tel" name="sdt" class="form-control form-control-lg" placeholder="Nhập số điện thoại">
-                    <span class="text-danger" id="sdt"></span>
+                    <input type="number" name="sdt" class="form-control form-control-lg" placeholder="Nhập số điện thoại">
+                    <span class="text-danger" class="error" id="sdt"></span>
+                </div>
+            </div>
+            <div class="row gx-3 pt-3">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="hinhanh" class="form-label">Hình ảnh sinh viên</label>
+                    <input type="file" id="hinhanh" name="hinhanh" class="form-control form-control-lg" placeholder="Chọn hình ảnh của sinh viên">
+                    <span class="text-danger" class="error" id="hinhanhh"></span>
+                    <img id="hinhanh-display" width="50%" class="img-fluid mt-3 shadow bg-white rounded">
                 </div>
             </div>
         </form>
@@ -65,14 +87,20 @@
 </div>
 
 <div class="container" style="width: 90%;">
-    <div class="card my-2 px-2">
+    <div class="card my-2 px-2 mb-3">
        <div class="card-body">
         <div class="row justify-content-between">
-            <div class="col-12 p-0 m-0 col-md-5 col-sm-6">
+            <div class="col-8 p-0 m-0 col-md-5 col-sm-8 col-lg-6 col-xl-6">
                 <h4>Quản lý sinh viên</h4>  
             </div>
             <button
-                class="btn btn-primary float-right col-12 col-sm-6 col-md-3 col-lg-2"
+                class="btn btn-primary float-right col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2"
+                data-bs-toggle="modal"
+                data-bs-target="#hinhAnhModal">
+                Thêm mới
+            </button>
+            <button
+                class="btn btn-primary float-right col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2"
                 data-bs-toggle="modal"
                 data-bs-target="#sinhvienModal">
                 Thêm mới
@@ -80,8 +108,10 @@
         </div>
        </div>
     </div>
-    <div class="container">
-        <table id="sinhvien-table" class="table table-bordered table-hover table-responsive"></table>
+    <div class="card">
+        <div class="card-body">
+            <table id="sinhvien-table" class="table table-bordered cell-border table-hover table-responsive"></table>
+        </div>
     </div>
 </div>
 
@@ -89,35 +119,191 @@
     <script>
         const BaseUrl = "http://localhost:5117"
         let sinhVienList = []
-        let dt
+        let dtRef
         let currentTableRow = {}
+        let isFormValid = false
+        const maxNgaySinh = new Date()
+        const emailRegex = /^(([^<>()[\]\\.,;:\s@@"]+(\.[^<>()[\]\\.,;:\s@@"]+)*)|.(".+"))@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        let formError = {
+            hoten: '',
+            ngaysinh: '',
+            diachi: '',
+            email: '',
+            sdt: '',
+            gioitinh: '',
+        }
 
         const formObject = (form) => {
             return Object.fromEntries(new FormData(form))
         }
 
-        const getFormObject = () => {
-            return formObject($("#sinhvien-form").get(0))
+        const HotenValidate = (value) => {
+            if(!value || String(value).length == 0) {
+                formError.hoten = 'Vui lòng nhập họ và tên!'
+                return false
+            }
+            formError.hoten = ''
+            return true
         }
 
-        function formatDateVN(object){
-            const objectDate = new Date(object)
-            const nam = objectDate.getFullYear()
-            const ngay = objectDate.getDay()
-            const thang = objectDate.getMonth() + 1
+        const DiaChiValidate = (value) => {
+            if(!value || String(value).length == 0) {
+                formError.diachi = 'Vui lòng nhập địa chỉ!'
+                return false
+            }
+            formError.diachi = ''
+            return true
+        }
+
+        const NgaySinhValidate = (value) => {
+            if(!value || String(value).length == 0) {
+                formError.ngaysinh = 'Vui lòng chọn ngày sinh!'
+                return false
+            }
+            formError.ngaysinh = ''
+            return true
+        }
+
+        const GioiTinhValidate = (value) => {
+            if(value == -1) {
+                formError.gioitinh = 'Vui lòng chọn giới tính!'
+                return false
+            }
+            formError.gioitinh = ''
+            return true
+        }
+
+        const EmailValidate = (value) => {
+            if(!value || String(value).length == 0) {
+                formError.email = 'Vui lòng nhập địa chỉ email!'
+                return false
+            }
+            if (!String(value).toLocaleLowerCase().match(emailRegex)) {
+                formError.email = 'Vui lòng nhập đúng định dạng email!'
+                return false
+            }
+            formError.email = ''
+            return true
+        }
+
+        const SDTValidate = (value) => {
+            if(!value || String(value).length == 0) {
+                formError.sdt = 'Vui lòng nhập số điện thoại!'
+                return false
+            }
+            if (value.length != 10) {
+
+                formError.sdt = 'Số điện thoại gồm 10 số!'
+                return false
+            }
+            formError.sdt = ''
+            return true
+        }
+
+        function ResetValidate (){
+            for(const [key, value] of Object.entries(formError)){
+                $("#sinhvien-form").find(`span[id='${key}']`).text('')
+            }
+            isFormValid = false
+        }
+
+        function Validate (){
+            const object = getFormObject()
+            const validate1 = HotenValidate(object.hoten)
+            const validate2 = DiaChiValidate(object.diachi)
+            const validate3 = EmailValidate(object.email)
+            const validate4 = SDTValidate(object.sdt)
+            const validate5 = GioiTinhValidate(object.gioitinh)
+            const validate6 = NgaySinhValidate(object.ngaysinh)
+            isFormValid = validate1 && validate2 && validate3 && validate4 && validate5 && validate6
+        }
+
+        /*  Kiểm tra thông tin đầu vào trên form, thực hiện in lỗi nếu có, thực hiện tải lên ảnh nếu có sau 
+            đó thêm hoặc cập nhật dữ liệu dựa trên id */
+        /*  Dữ liệu đầu vào cho Isert() và Update() là tên file cuả hình ảnh đã được thêm phía serverSide
+            tên ảnh được tạo lại thay vì dùng tên file mặc định */
+        const InitValidate = () => {
+            Validate()
+            if (!isFormValid){
+                RenderError()
+            }
+            else {
+                const id = $("#sinhvien-form input[name='id']").val()
+                const fileInputJquery = $("#sinhvien-form input[type='file'][name='hinhanh']")
+                if(fileInputJquery[0].files && fileInputJquery[0].files.length > 0) {
+                    UploadImage().then((response) => {
+                        if(response.status === "OK"){
+                            if(id === '0') {
+                                Insert(response.data)
+                            }
+                            else {
+                                Update(response.data)
+                            }
+                        }
+                    })
+                }
+                else {
+                    if(id === '0') {
+                        Insert()
+                    }
+                    else {
+                        Update()
+                    }
+                }
+            }
+        }
+
+        function RenderError () {
+            for(const [key, value] of Object.entries(formError)){
+                $("#sinhvien-form").find(`span[id='${key}']`).text(value)
+            }
+        }
+
+        const getFormObject = () => {
+            const object = formObject($("#sinhvien-form").get(0))
+            const hinhanh_url = $("#hinhanh-display").attr("src").replace("/images/", "") 
+            object.hinhanh_url = hinhanh_url
+            return object
+        }
+
+        function getVNDateFromDate(date) {
+            const nam = date.getFullYear()
+            const ngay = date.getDate()
+            const thang = date.getMonth() + 1
             return `${ngay>9 ? ngay:'0'+ngay}-${thang>9 ? thang:'0'+thang}-${nam}`
         }
 
-        function InitDatatable(){
-            dt = $("#sinhvien-table").DataTable({
-                data: sinhVienList,
+        function getDateFromStringDate(strDate) {
+            const date = new Date(strDate)
+            return getVNDateFromDate(date)
+        }
+
+        // Bảng đatatable hiển thị thông tin sinh viên, bao gồm tìm kiếm, phân trang
+        /* Input
+            
+        */
+
+        /* Output
+            
+        */
+        function InitDatatable() {
+            dtRef = $("#sinhvien-table").DataTable({
+                ajax: {
+                    url: `${BaseUrl}/api/sinh-vien/datatable`,
+                    "contentType": "application/json",
+                    "type": "POST",
+                    data: (d) => {
+                        return JSON.stringify(d)
+                    }
+                },
                 columns: [
                     {
+                        orderable: false,
                         data: null,
                         title: 'STT',
                         render: (data, type, row, meta) => {
                             if(type === 'display'){
-                                return meta.row + 1
+                                return Number(meta.row) + Number(meta.settings["_iDisplayStart"]) + 1;
                             }
                             return data
                         },
@@ -134,6 +320,18 @@
                             }
                             return data
                         },
+                        width: "150px"
+                    },
+                    {
+                        data: 'hinhanh_url',
+                        title: 'Ảnh sinh viên',
+                        render: (data, type, row, meta) => {
+                            if(type === 'display'){
+                                return `<img class='img-fluid rounded shadow bg-white' src='${data != "" && data != null ? '/images/'+data : ''}'/>`
+                            }
+                            return data
+                        },
+                        width: "150px"
                     },
                     {data: 'email', title: 'Email'},
                     {data: 'sdt', title: 'Số điện thoại'},
@@ -152,7 +350,8 @@
                     {
                         data: null, 
                         title: 'Thao tác',
-                        width: '140px',
+                        width: '160px',
+                        className: "text-center",
                         orderable: false,
                         defaultContent: '',
                         render: (data, type, row) => {
@@ -165,24 +364,39 @@
                         }
                     }
                 ],
-                lengthMenu: [3, 10, 50],
-                pageLength: 3,
+                lengthMenu: [5, 10, 20, 50, 100],
+                paging: true,
+                serverSide: true,
+                processing: true,
+                responsive: true,
+                searching: true,
                 columnDefs: [
-                    {orderable: false, targets: [-1, 0, 1, 2, 3, 4, 6]}
+                    {orderable: false, targets: [0, 1, 2, 3, 4, 6]}
                 ],
-                order: []
+                order: [],
+                language: {
+                    url: '/public/i18n/vi.json',
+                },
+                initComplete: (settings, json) => {
+                    $("#sinhvien-table_wrapper input[type=search]").keypress((event) => {
+                        if(event.which === 13){
+                            dtRef.ajax.reload()
+                        }
+                    })
+                }
             })
         }
 
         function Init(){
-            GetList()
             $("#btn-save-action").on("click", () => {
-                console.log(JSON.stringify(getFormObject()))
-                Insert()
+                InitValidate()
             })
 
             $("#sinhvienModal").on("hidden.bs.modal", () => {
                 $("#sinhvienModal form").get(0).reset()
+                ResetValidate()
+                $("#sinhvienModalLabel").text("Thêm mới thông tin sinh viên")
+                $("#hinhanh-display").attr("src", "")
             })
 
             $("#sinhvien-table").on("click", ".btn-delete-action", (e) => {
@@ -193,36 +407,28 @@
             $("#sinhvien-table").on("click", ".btn-edit-action", (e) => {
                 currentTableRow = e.target.closest('tr')
                 Edit()
+                $("#sinhvienModalLabel").text("Cập nhật thông tin sinh viên")
             })
-@* 
-            $("#sinhvien-form").find("input[type=date]").change((e) => {
-                alert(formatDateVN(e.target.value))
-                e.target.value = formatDateVN(e.target.value)
-            }) *@
-        }
 
-        function GetList(){
-            $.ajax({
-                type: "GET",
-                url: `${BaseUrl}/api/sinh-vien/list`,
-                success: (response) => {
-                    sinhVienList = response.data
-                    console.log(sinhVienList)
-                    InitDatatable()
-                },
-                error: (response) => {
-                    alert("error")
+            $("#sinhvien-form input[name=hinhanh]").on("change", (e) => {
+                console.log(e.currentTarget.files)
+                const reader = new FileReader()  
+
+                reader.onload = (f) => {
+                    $("#hinhanh-display").attr("src", f.target.result)
                 }
+                reader.readAsDataURL(e.currentTarget.files[0])
             })
+
+            $("#sinhvien-form input[name='ngaysinh']").attr("max", getUSDateFromDate(maxNgaySinh))
         }
 
         function InsertNewObjectIntoTable(object) {
-            dt.row.add(object).draw(false)
-            dt.page('last').draw(false)
+            dtRef.row.add(object).draw(true)
         }
 
         function Delete() {
-            const id = dt.row(currentTableRow).data()['id']
+            const id = dtRef.row(currentTableRow).data()['id']
             Swal.fire({
                 title: 'Xác nhận',
                 text: 'Bạn muốn xóa thông tin của sinh viên này?',
@@ -248,7 +454,7 @@
                                 text: "Xóa thông tin sinh viên thành công",
                                 icon: "success"
                             }).then(() => {
-                                dt.row(currentTableRow).remove().draw(false)
+                                dtRef.row(currentTableRow).remove().draw()
                             })
                         },
                         error: (response) => {
@@ -256,7 +462,7 @@
                             $("#loading").removeClass('d-block')
                             Swal.fire({
                                 title: "Thông báo",
-                                text: "Xóa thông tin sinh viên không thành công",
+                                text: "Xóa thông tin sinh viên không thành công, Hệ thống đang trục trặc, vui lòng thử lại sau!",
                                 icon: "error"
                             })
                         }
@@ -265,12 +471,13 @@
             })
         }
 
-        function Insert() {
+        function Insert(hinhanh_url = "") {
             $("#loading").removeClass('d-none')
             $("#loading").addClass('d-block')
             const object = getFormObject()
+            object.email = object.email.toLocaleLowerCase()
             object.gioitinh = parseInt(object.gioitinh)
-
+            if(hinhanh_url != "") { object.hinhanh_url = hinhanh_url }
             $.ajax({
                 type: "POST",
                 url: `${BaseUrl}/api/sinh-vien`,
@@ -280,44 +487,133 @@
                     $("#loading").addClass('d-none')
                     $("#loading").removeClass('d-block')
                     object.id = response.data
-                    $("#sinhvienModal").modal("hide")
                     
-                    setTimeout(() => {
-                        InsertNewObjectIntoTable(object)
-                    }, 200)
+                    if (response.status === "OK") {
+                        $("#sinhvienModal").modal("hide")
+                        Swal.fire({
+                            title: "Thông báo",
+                            text: "Thêm thông tin sinh viên thành công",
+                            icon: "success"
+                        }).then(() => {
+                            setTimeout(() => {
+                                object.ngaysinh = getDateFromStringDate(object.ngaysinh)
+                                InsertNewObjectIntoTable(object)
+                            }, 200)
+                        })
+                    }
+                    else {
+                        for(error of response.errors) {
+                            formError[error.key] = error.value
+                        }
+                        RenderError()
+                    }
                 },
                 error: (response) => {
-                    alert("error")
                     $("#loading").addClass('d-none')
                     $("#loading").removeClass('d-block')
+                    Swal.fire({
+                        title: "Thông báo",
+                        text: "Thêm thông tin sinh viên không thành công, Hệ thống đang trục trặc, vui lòng thử lại sau!",
+                        icon: "error"
+                    })
                 }
             })
         }
         
         function Edit() {
-            BindObjectToForm()        
+            BindObjectToForm()
+
         }
 
+        function Update(hinhanh_url = "") {
+            $("#loading").removeClass('d-none')
+            $("#loading").addClass('d-block')
+            const object = getFormObject()
+            object.gioitinh = parseInt(object.gioitinh)
+            object.email = object.email.toLocaleLowerCase()
+            object.id = parseInt(object.id)
+            if(hinhanh_url != "") { object.hinhanh_url = hinhanh_url }
+            $.ajax({
+                type: "PUT",
+                url: `${BaseUrl}/api/sinh-vien`,
+                data: JSON.stringify(object),
+                contentType: "application/json",
+                success: (response) => {
+                    $("#loading").addClass('d-none')
+                    $("#loading").removeClass('d-block')
+
+                    if (response.status === "OK") {
+                        $("#sinhvienModal").modal("hide")
+                        Swal.fire({
+                            title: "Thông báo",
+                            text: "Cập nhật thông tin sinh viên thành công",
+                            icon: "success"
+                        }).then(() => {
+                            setTimeout(() => {
+                                object.ngaysinh = getDateFromStringDate(object.ngaysinh)
+                                dtRef.row(currentTableRow).data(object)
+                            }, 200)
+                        })
+                    }
+                    else {
+                        for(error of response.errors) {
+                            formError[error.key] = error.value
+                        }
+                        RenderError()
+                    }
+                },
+                error: (response) => {
+                    $("#loading").addClass('d-none')
+                    $("#loading").removeClass('d-block')
+                    Swal.fire({
+                        title: "Thông báo",
+                        text: "Cập nhật thông tin sinh viên không thành công, Hệ thống đang trục trặc, vui lòng thử lại sau!",
+                        icon: "error"
+                    })
+                }
+            })
+        }
+
+        function UploadImage() {
+            const fileInputJquery = $("#sinhvien-form input[type='file'][name='hinhanh']")
+            var formData = new FormData();
+            formData.append('file', fileInputJquery[0].files[0])
+            return $.ajax({
+                url: `${BaseUrl}/api/_upload/image`,
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false
+            })
+        }
+
+        // Hàm này gán dữ liệu từ object sang form, hiển thị hình ảnh sinh viên
         function BindObjectToForm() {
-            let obj = dt.row(currentTableRow).data()
+            let obj = dtRef.row(currentTableRow).data()
             for( const [key, value] of Object.entries(obj)) {
-                $("#sinhvien-form").find(`input[name='${key}'], select[name='${key}']`).prop("value", value)
+                $("#sinhvien-form").find(`input[name='${key}']:not([type='file']), select[name='${key}']`).prop("value", value)
             }
+            $("#hinhanh-display").attr("src", `/images/${obj.hinhanh_url}`)
+            $("#sinhvien-form").find("input[name='ngaysinh']").prop("value", getUSDateFromStringVnDate(obj.ngaysinh))
             $("#sinhvienModal").modal("show")
-
-            console.log(getFormObject())
         }
+
         $(document).ready(() => {
             Init()
         })
 
-        function GetDateFromVnDate(strValue) {
-            const UsDate = null 
-            const day = String(strValue).substr(0, 2)
-            const month = parseInt(String(strValue).substr(3, 2))+1
-            const year = String(strValue).substring(6)
-            UsDate = new Date(`${year}-${month}-${day}`)
-            return UsDate
+        function getUSDateFromStringVnDate(strValue) {
+            const ngay = String(strValue).substr(0, 2)
+            const thang = String(strValue).substr(3, 2)
+            const nam = String(strValue).substring(6)
+            return `${nam}-${thang}-${ngay}`
+        }
+
+        function getUSDateFromDate(date) {
+            const nam = date.getFullYear()
+            const ngay = date.getDate()
+            const thang = date.getMonth() + 1
+            return `${nam}-${thang>9 ? thang:'0'+thang}-${ngay>9 ? ngay:'0'+ngay}`
         }
     </script>
 }

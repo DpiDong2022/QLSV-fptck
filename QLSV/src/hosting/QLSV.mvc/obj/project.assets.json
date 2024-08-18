@@ -2161,7 +2161,10 @@
         },
         "runtime": {
           "bin/placeholder/QLSV.data.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "QLSV.domain/1.0.0": {
         "type": "project",
@@ -7040,11 +7043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\QLSV.mvc.csproj",
+      "projectUniqueName": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\QLSV.mvc.csproj",
       "projectName": "QLSV.mvc",
-      "projectPath": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\QLSV.mvc.csproj",
+      "projectPath": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\QLSV.mvc.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\obj\\",
+      "outputPath": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7062,8 +7065,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\infrastructure\\QLSV.data\\QLSV.data.csproj": {
-              "projectPath": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\infrastructure\\QLSV.data\\QLSV.data.csproj"
+            "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\infrastructure\\QLSV.data\\QLSV.data.csproj": {
+              "projectPath": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\infrastructure\\QLSV.data\\QLSV.data.csproj"
             }
           }
         }

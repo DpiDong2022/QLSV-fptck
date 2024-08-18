@@ -1,0 +1,23 @@
+{
+    "aria": {
+        "sortAscending": ": activate to sort column ascending",
+        "sortDescending": ": activate to sort column descending"
+    },
+    "processing": "Đang xử lý...",
+    "emptyTable": "Không có dữ liệu",
+    "info": "Bản ghi từ _START_ tới _END_, <strong class=\"text-danger\">tổng _TOTAL_</strong>(bản ghi Lọc từ _MAX_ bản ghi)",
+    "infoEmpty":     "Không có bản ghi nào",
+    "infoFiltered":   "",
+    "lengthMenu":     "Hiển thị _MENU_ bản ghi",
+    "search": "_INPUT_",
+    "searchPlaceholder": "Tìm kiếm ...",
+    "zeroRecords": "Không tìm thấy bản ghi nào phù hợp",
+    "oPaginate": {
+        "sFirst": "<<",
+        "sPrevious": "<",
+        "sNext": ">",
+        "sLast": ">>"
+    },
+    "metronicGroupActions": "Đã chọn _TOTAL_ bản ghi",
+    "metronicAjaxRequestGeneralError": "Could not complete request. Please check your internet connection"
+}

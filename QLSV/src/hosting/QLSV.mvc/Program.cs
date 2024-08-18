@@ -1,5 +1,5 @@
 using QLSV.data.Services;
-using QLSV.mvc.Models;
+using QLSV.domain.entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +21,14 @@ if (!app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.Use( async (context, next) => {
+    await next();
+    if(context.Response.StatusCode == 404 && context.Request.Path.Value.Contains("/images/")) {
+        context.Request.Path = "/images/default.jpg";
+        await next();
+    }
+}); 
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

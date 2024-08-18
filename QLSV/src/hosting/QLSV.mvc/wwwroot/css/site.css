@@ -20,3 +20,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+img:hover{
+  background-color: rgb(195, 195, 195);
+}
+
+table.dataTable thead tr {
+  background-color: rgb(48, 87, 214);
+  color: white;
+}
+
+*{
+  font-family:sans-serif;
+}

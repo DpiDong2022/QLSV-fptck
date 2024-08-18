@@ -85,3 +85,5 @@ D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\hosting\QLSV.mvc\obj\Deb
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\hosting\QLSV.mvc\obj\Debug\net6.0\QLSV.mvc.pdb
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\hosting\QLSV.mvc\obj\Debug\net6.0\QLSV.mvc.genruntimeconfig.cache
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\hosting\QLSV.mvc\obj\Debug\net6.0\ref\QLSV.mvc.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\hosting\QLSV.mvc\obj\Debug\net6.0\QLSV.mvc.sourcelink.json
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\hosting\QLSV.mvc\bin\Debug\net6.0\AutoMapper.dll

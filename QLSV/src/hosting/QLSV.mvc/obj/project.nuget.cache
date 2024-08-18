@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YR8FYXuIgpw=",
+  "dgSpecHash": "mMrPsFkJsdA=",
   "success": true,
-  "projectFilePath": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\QLSV.mvc.csproj",
+  "projectFilePath": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\hosting\\QLSV.mvc\\QLSV.mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\6.2.2\\automapper.6.2.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
