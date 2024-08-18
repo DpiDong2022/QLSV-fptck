@@ -13,3 +13,4 @@ D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\refint\QLSV.data.dll
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.pdb
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\ref\QLSV.data.dll
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\infrastructure\QLSV.data\obj\Debug\net6.0\QLSV.data.sourcelink.json

@@ -1,11 +1,9 @@
-using System;
-namespace QLSV.domain.entities
+namespace QLSV.domain.entities.DTO.response
 {
-    
-    public class SinhVien {
+    public class SinhVienDto {
         public int id { get; set; }
         public string hoten { get; set; } = "";
-        public DateTime ngaysinh { get; set; }
+        public string ngaysinh { get; set; } = "";
         public int gioitinh { get; set; }
         public string diachi { get; set; } = "";
         public string sdt { get; set; } = "";

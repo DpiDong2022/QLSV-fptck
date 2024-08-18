@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj": {}
+    "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj": {}
   },
   "projects": {
-    "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj": {
+    "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj",
+        "projectUniqueName": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj",
         "projectName": "QLSV.domain",
-        "projectPath": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj",
+        "projectPath": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\QLSV.domain.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\obj\\",
+        "outputPath": "d:\\FPTS_chungKhoan_thuctap\\TaiLieu\\BaiTap\\demo\\QLSV\\src\\core\\QLSV.domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

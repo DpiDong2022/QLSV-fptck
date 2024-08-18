@@ -7,3 +7,4 @@ D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Deb
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.csproj.CoreCompileInputs.cache
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.dll
 D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.pdb
+D:\FPTS_chungKhoan_thuctap\TaiLieu\BaiTap\demo\QLSV\src\core\QLSV.domain\obj\Debug\netstandard2.1\QLSV.domain.sourcelink.json
